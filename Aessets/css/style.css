@@ -415,14 +415,13 @@ bottom: 0;
     font-size: var(--h3-font-size);
 }
 .skills__subtitle{
-    font-size: small;
+    font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
 
 .skills__arrow{
     margin-left: auto;
     transition: .4s;
-    position:relative;
 }
 
 .skills__list{
@@ -494,8 +493,7 @@ background-color: var(--first-color);
     width: 75%;
 }
 
-.skills__close
-.skills__list{
+.skills__close .skills__list{
     height: 0;
     overflow: hidden;
 
@@ -503,12 +501,12 @@ background-color: var(--first-color);
 
 .skills__open .skills__list{
     height: max-content;
-    margin-bottom:auto;
+    margin-bottom:var(--mb-2-5);
 }
 
 .skills__open .skills__arrow{
     transform: rotate(-180deg);
-    
+
 
 }
 
@@ -533,7 +531,7 @@ background-color: var(--first-color);
 
 /*==================== CONTACT ME ====================*/
 
-
+</main>
 /*==================== FOOTER ====================*/
 
 
