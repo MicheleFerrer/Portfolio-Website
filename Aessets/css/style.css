@@ -296,9 +296,6 @@ bottom: 0;
     margin-bottom: var(--mb-2);
 }
 
-.home__scroll{
-
-}
 
 .home__scroll-button{
     color: var(--first-color);
@@ -507,7 +504,6 @@ background-color: var(--first-color);
 .skills__open .skills__arrow{
     transform: rotate(-180deg);
 
-
 }
 
 
@@ -531,7 +527,7 @@ background-color: var(--first-color);
 
 /*==================== CONTACT ME ====================*/
 
-</main>
+
 /*==================== FOOTER ====================*/
 
 
@@ -542,4 +538,3 @@ background-color: var(--first-color);
 
 
 /*========== SCROLL BAR ==========*/
-
