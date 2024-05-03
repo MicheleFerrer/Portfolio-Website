@@ -40,35 +40,35 @@ a:active { text-decoration: none; }
  --smaller-font-size: .75rem;
 
 /*========== Font weight ==========*/
- --font-medium: 500;
- --font-semi-bold: 600;
+--font-medium: 500;
+--font-semi-bold: 600;
 
 /*========== Margenes Bottom ==========*/
- --mb-0-25: .25rem;
- --mb-0-5: .5rem;
- --mb-0-75: .75rem;
- --mb-1: 1rem;
- --mb-1-5: 1.5rem;
- --mb-2: 2rem;
- --mb-2-5: 2.5rem;
- --mb-3: 3rem;
+--mb-0-25: .25rem;
+--mb-0-5: .5rem;
+--mb-0-75: .75rem;
+--mb-1: 1rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+--mb-3: 3rem;
 
 /*========== z index ==========*/
- --z-tooltip: 10;
- --z-fixed: 100;
- --z-modal: 1000;
+--z-tooltip: 10;
+--z-fixed: 100;
+--z-modal: 1000;
 }
 
 /* Font size for large devices */
- @media screen and (min-width: 968px) {
+@media screen and (min-width: 968px) {
     :root{
-     --big-font-size: 3rem;
-     --h1-font-size: 2.25rem;
-     --h2-font-size: 1.5rem;
-     --h3-font-size: 1.25rem;
-     --normal-font-size: 1rem;
-     --small-font-size: .875rem;
-     --smaller-font-size: .813rem;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
     }
 }
 /*========== Variables Dark theme ==========*/
@@ -78,17 +78,17 @@ a:active { text-decoration: none; }
 
 
 /*==================== BASE ====================*/
- *{
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-     }
+}
 
- html{
+    html{
     scroll-behavior: smooth;
     }
 
- body{
+    body{
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -112,7 +112,7 @@ a:active { text-decoration: none; }
 
     }
 
-    /*===============================reusable CSS Classes===============*/
+/*===============================reusable CSS Classes===============*/
 .section{
     padding:2rem 0 4rem;
 }
@@ -134,44 +134,44 @@ font-size: var(--h1-font-size)
 
 
 /*==================== LAYOUT ====================*/
- .container{
+.container{
     max-width: 768px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
-  }
-  
- .grid{
+}
+
+.grid{
     display: grid;
     gap: 1.5rem;
-  }
-  
- .header{
+}
+
+.header{
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
-  }
-  
+}
 
- /*==================== NAV ====================*/
- .nav{
+
+/*==================== NAV ====================*/
+.nav{
     max-width: 968px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
+}
 
 .nav__logo,
 .nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
- .nav__logo:hover{
+.nav__logo:hover{
     color: var(--first-color);
- }
+}
 .nav__toggle{
     font-size: 1.1rem;
     cursor: pointer;
@@ -508,6 +508,76 @@ background-color: var(--first-color);
 
 
 /*==================== QUALIFICATION ====================*/
+.qualification__tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.qualification__button:hover{
+    color: var(--first-color);
+}
+
+.qualification__icon{
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.qualification__data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualification__subtitle{
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.qualification__rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.qualification__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+    display: none;
+}
+
+.qualification__active[data-content]{
+    display: block;
+}
+
+.qualification__button.qualification__active{
+    color: var(--first-color);
+}
 
 
 /*==================== SERVICES ====================*/
