@@ -599,7 +599,6 @@ background-color: var(--first-color);
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .services__content{
     position: relative;
     background-color: var(--container-color);
@@ -694,7 +693,7 @@ transform: translateX(.25rem);
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
-    overflow: initial;
+
 }
 
 .portfolio__content{
@@ -702,7 +701,7 @@ transform: translateX(.25rem);
 }
 
 .portfolio__img{
-    width: 285px;
+    width: 40%;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -720,6 +719,23 @@ transform: translateX(.25rem);
     transform: translateX(.25rem);
 }
 
+
+@keyframes loopSwiper {
+    0% {
+        transform: translateX(0);
+
+        50%{
+            transform: translateX(-100%);
+        }
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.swiper-wrapper {
+    animation: loopSwiper 15s linear infinite;
+}
 /*==================== PROJECT IN MIND ====================*/
 
 
