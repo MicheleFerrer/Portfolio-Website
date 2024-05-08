@@ -157,7 +157,7 @@ font-size: var(--h1-font-size)
 
 /*==================== NAV ====================*/
 .nav{
-    max-width: 968px;
+    max-width: 100%;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -173,14 +173,14 @@ font-size: var(--h1-font-size)
     color: var(--first-color);
 }
 .nav__toggle{
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 .nav__toggle:hover{
 color: var(--first-color);
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 3000px){
     .nav__menu{
         position: fixed;
         bottom: -100%;
@@ -192,11 +192,13 @@ color: var(--first-color);
         box-shadow: 0 -1px 4px rgba(0,0, 0,.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
+        
     }
 }
 .nav__list{
 grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
+gap: 15.rem;
+
 }
 
 .nav__link{
@@ -213,17 +215,17 @@ gap: 2rem;
 }
 
 .nav__icon{
-    font-size: 1.2rem;
-
+    font-size: 1.5rem;
+    overflow: hidden;
 }
 
 .nav__close{
-    position: absolute;
-    right: 1.3rem;
-    bottom: .5rem;
+    position:absolute;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--first-color);
+    padding-left: 31%;
+    padding-top: 20px;
 }
 
 .nav__close:hover{
@@ -233,6 +235,7 @@ gap: 2rem;
  /* show menu */
 .show-menu{
 bottom: 0;
+
 }
 
  /* Active link */
@@ -692,9 +695,6 @@ transform: translateX(.25rem);
 }
 
 /*==================== PORTFOLIO ====================*/
-.portfolio__container{
-
-}
 
 .portfolio__content{
     padding: 0 1.5rem;
@@ -723,18 +723,17 @@ transform: translateX(.25rem);
 @keyframes loopSwiper {
     0% {
         transform: translateX(0);
-
-        50%{
-            transform: translateX(-100%);
-        }
+    }
+    50% {
+        transform: translateX(-150%);
     }
     100% {
-        transform: translateX(-200%);
+        transform: translateX(-300%);
     }
 }
 
 .swiper-wrapper {
-    animation: loopSwiper 15s linear infinite;
+    animation: loopSwiper 20s linear infinite;
 }
 /*==================== PROJECT IN MIND ====================*/
 
