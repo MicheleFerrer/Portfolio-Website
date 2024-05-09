@@ -344,6 +344,14 @@ bottom: 0;
     transition: .4s;
 }
 
+.button--white{
+    background-color: #fff;
+    color: var(--first-color);
+}
+.button--white:hover{
+    background-color: #ffffffee;
+}
+
 .button--flex{
     display: inline-flex;
     align-items: center;
@@ -730,25 +738,98 @@ transform: translateX(.25rem);
         transform: translateX(0);
     }
     50% {
-        transform: translateX(-150%);
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(-300%);
+        transform: translateX(-200%);
     }
 }
 
 .swiper-wrapper {
-    animation: loopSwiper 20s linear infinite;
+    animation: loopSwiper 15s linear infinite;
 }
 /*==================== PROJECT IN MIND ====================*/
+.project{
+    text-align: center;
+}
+
+.project__bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.project__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+    margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+    color: #fff;
+}
 
 
 /*==================== TESTIMONIAL ====================*/
+.testimonial__data,
+.testimonial__header{
+    display: flex;
+}
+
+.testimonial__data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.testimonial__name{
+    font-size: var(--h3-font-size);
+    font-family: var(--font-medium);
+}
+
+.testimonial__client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.testimonial__description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.testimonial__icon-star{
+    color: var(--first-color);
+}
 
 
 /*==================== CONTACT ME ====================*/
+.contact__container{
+    row-gap: 3rem;
+}
 
+.contact__information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
 
+.contact__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contact__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
 /*==================== FOOTER ====================*/
 
 
