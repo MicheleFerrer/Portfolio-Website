@@ -778,6 +778,15 @@ transform: translateX(.25rem);
     transform: translateX(.35rem);
 }
 
+.portfolio__button{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
 
 /*==================== PROJECT IN MIND ====================*/
 .project{
@@ -816,10 +825,11 @@ transform: translateX(.25rem);
 }
 
 .testimonial__img{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     margin-right: var(--mb-0-75);
+    align-items: center;
 }
 
 .testimonial__name{
@@ -838,6 +848,9 @@ transform: translateX(.25rem);
 
 .testimonial__icon-star{
     color: var(--first-color);
+    padding-right: 10px;
+    margin-right: 12px;
+    justify-content: center;
 }
 
 
@@ -989,7 +1002,7 @@ transform: translateX(.25rem);
 
 /*small devices*/
 
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
